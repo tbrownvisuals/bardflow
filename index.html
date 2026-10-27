@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BardFlow Enterprises — HVAC Commercial Design &amp; Consulting, Las Vegas</title>
+<meta name="description" content="BardFlow Enterprises — HVAC commercial design and consulting in Las Vegas, NV.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; height: 100%; background: #0b131b; }
+  main {
+    position: relative; min-height: 100vh; overflow: hidden;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Inter', system-ui, sans-serif; color: #e8eef4;
+  }
+  .layer { position: absolute; inset: 0; }
+  .photo { background: url(hero.jpg) center 60% / cover; filter: grayscale(.35) saturate(.8); }
+  .tint { background: rgba(11, 23, 34, .82); }
+  .grid { background: url(grid.jpg) center / cover; mix-blend-mode: overlay; opacity: .35; }
+  .vignette { background: radial-gradient(ellipse at center, rgba(8,14,20,0) 35%, rgba(8,14,20,.7) 100%); }
+  .content {
+    position: relative; display: flex; flex-direction: column; align-items: center;
+    gap: 36px; padding: 48px 24px; text-align: center; max-width: 900px; width: 100%; box-sizing: border-box;
+  }
+  .logo { width: min(560px, 82vw); height: auto; display: block; }
+  .name {
+    margin: -14px 0 0; font-size: 20px; font-weight: 400; letter-spacing: .42em;
+    text-transform: uppercase; color: #fff; padding-left: .42em;
+  }
+  .rule { width: 56px; height: 2px; background: #4ea6f0; margin: -8px 0; }
+  .tagline {
+    margin: 0; font-size: 15px; font-weight: 500; letter-spacing: .2em;
+    text-transform: uppercase; color: #c9d4de; line-height: 1.8;
+  }
+  .tagline span { color: #4ea6f0; }
+  .contact {
+    margin: 0; font-size: 15px; letter-spacing: .06em; color: #9fb0bf;
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 22px;
+  }
+  .contact a { color: #e8eef4; text-decoration: none; }
+  .contact a:hover { color: #5fb2f5; }
+  @media (max-width: 520px) {
+    .name { font-size: 15px; letter-spacing: .3em; padding-left: .3em; }
+    .tagline { font-size: 12px; letter-spacing: .14em; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="layer photo" aria-hidden="true"></div>
+  <div class="layer tint" aria-hidden="true"></div>
+  <div class="layer grid" aria-hidden="true"></div>
+  <div class="layer vignette" aria-hidden="true"></div>
+  <div class="content">
+    <img class="logo" src="logo.png" alt="BardFlow">
+    <p class="name">BardFlow Enterprises</p>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="tagline">HVAC Commercial Design <span>|</span> Consulting <span>·</span> Las Vegas, NV</p>
+    <p class="contact"><a href="mailto:info@bardflow.com">info@bardflow.com</a>
+  </div>
+</main>
+</body>
+</html>
